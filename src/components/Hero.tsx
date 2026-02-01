@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import './Hero.css';
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const texts = [
-    'I find bugs before users do',
-    'I insist on quality, not shortcuts',
-    'I help teams ship with confidence'
+    'I think about quality early, not late',
+    'I focus on user journeys, not just tests',
+    'I help teams release with confidence'
   ];
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const Hero = () => {
   }, [currentText, currentIndex]);
 
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
         <h1>
           Hi, I'm <strong>Sagar Bobade</strong>

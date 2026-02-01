@@ -1,0 +1,75 @@
+.testing-impact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.testing-impact-content {
+  max-width: 700px;
+  width: 100%;
+}
+
+.testing-impact h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.testing-impact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.testing-impact li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.testing-impact li:before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+.testing-impact li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .testing-impact {
+    padding: 3rem 1.5rem;
+  }
+  
+  .testing-impact h2 {
+    font-size: 1.75rem;
+  }
+  
+  .testing-impact li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .testing-impact {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .testing-impact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testing-impact li {
+    padding-left: 1.25rem;
+  }
+}

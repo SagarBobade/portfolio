@@ -1,0 +1,78 @@
+.toolbelt {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.toolbelt-content {
+  max-width: 700px;
+  width: 100%;
+}
+
+.toolbelt h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.tool-group {
+  display: flex;
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.tool-group:last-child {
+  margin-bottom: 0;
+}
+
+.tool-category {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.tool-list {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .toolbelt {
+    padding: 3rem 1.5rem;
+  }
+  
+  .toolbelt h2 {
+    font-size: 1.75rem;
+  }
+  
+  .tool-group {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tool-category {
+    font-size: 1rem;
+    min-width: auto;
+    margin-bottom: 0.25rem;
+  }
+  
+  .tool-list {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolbelt {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .toolbelt h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
